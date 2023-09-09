@@ -1,4 +1,8 @@
+
+
 const currentDate = new Date();
+const currentDay = currentDate.getDay();
+
 //Indicate the current day of the week (e.g., Monday, Tuesday).
 const daysOfWeek = [
   "Sunday",
@@ -9,13 +13,14 @@ const daysOfWeek = [
   "Friday",
   "Saturday",
 ];
+
 const dayName = daysOfWeek[currentDay];
 
 document.getElementById("display_current_day").innerHTML = dayName;
 
-// Display the current UTC time in milliseconds,.
+// Display the current UTC time in milliseconds,
+
 const currentTimeMilliseconds = currentDate.getTime();
 
-console.log(`Current time in milliseconds: ${currentTimeMilliseconds}`);
+document.getElementById("display_time_in_milliseconds").innerHTML = `${currentTimeMilliseconds} Milliseconds `
 
-console.log("hello world")
